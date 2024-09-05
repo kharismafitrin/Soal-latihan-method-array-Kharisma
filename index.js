@@ -15,4 +15,6 @@ const colors = ["blue", "black", "purple", "white", "pink"]
 let warnaLebihDari4 = colors.filter(function (el) {
     return el.length > 4
 })
-console.log(warnaLebihDari4)
+
+let warnaLebihDari4lain = colors.filter(el => el.length > 4)
+console.log(warnaLebihDari4lain)

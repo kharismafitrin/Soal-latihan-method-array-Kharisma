@@ -36,3 +36,5 @@ console.log("Urutan besar ke kecil:", angkaDesc)
 //coba reverse
 let reverseAngka = [...angka].reverse()
 console.log("Urutan terbalik:", reverseAngka)
+
+let
