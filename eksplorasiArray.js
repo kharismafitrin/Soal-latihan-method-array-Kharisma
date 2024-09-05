@@ -37,4 +37,9 @@ console.log("Urutan besar ke kecil:", angkaDesc)
 let reverseAngka = [...angka].reverse()
 console.log("Urutan terbalik:", reverseAngka)
 
-let
+//coba sum semua
+let sum = 0
+angka.forEach(function (el) {
+    sum += el
+})
+console.log("Jumlah angka:", sum)
