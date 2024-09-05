@@ -6,20 +6,11 @@ let genap = angka.filter(el =>
 )
 console.log("Genap:", genap)
 
-let genap2 = angka.filter(function (el) {
-    return el % 2 === 0
-})
-console.log("Genap2:", genap)
-
 // mencari angka ganjil
-let ganjil1 = angka.filter(el =>
+let ganjil = angka.filter(el =>
     el % 2 !== 0
 )
-console.log("Ganjil1:", ganjil1)
-let ganjil2 = angka.filter(function (el) {
-    el % 2 !== 0
-})
-console.log("Ganjil2:", ganjil2)
+console.log("Ganjil:", ganjil)
 
 // mencari angka pertama yang lebih besar dari 10
 let diatas10 = angka.find(el => el > 10)
@@ -43,3 +34,14 @@ angka.forEach(function (el) {
     sum += el
 })
 console.log("Jumlah angka:", sum)
+
+//cari bilangan prima
+let bilPrima = angka.filter(function (el) {
+    for (let i = 2; i <= el / 2; i++) {
+        if (el % i == 0) {
+            return false
+        }
+    }
+    return true
+})
+console.log(bilPrima)
